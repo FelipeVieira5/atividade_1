@@ -1,3 +1,3 @@
-const main = require("./atividade11");
+const main = require("./atividade12");
 
-console.log(main(2023));
+console.log(main([1,23,64,3]));
