@@ -1,4 +1,4 @@
 function main(celsius) {
-    return (celsius*1.82) + 32;
+    return (celsius*(9/5)) + 32;
 }
 module.exports = main;
