@@ -1,3 +1,4 @@
-const main = require("./atividade22");
+const main = require("./atividade28");
 
-console.log(main(6));
+
+console.log(main(["tes","test","tes","test",23]));
