@@ -1,5 +1,5 @@
-function main(base,altura) {
+function main(compri,alt) {
   // codigo
-  return (base*altura)/2;
+  return (compri*alt);
 }
 module.exports = main;
