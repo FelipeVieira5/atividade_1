@@ -1,4 +1,4 @@
-const main = require("./atividade33");
+const main = require("./atividade13");
 
 
-console.log(main(6));
+console.log(main(7));
