@@ -1,6 +1,7 @@
 function main(num1,num2) {
   // codigo
   let sobra = 1;
+  if(num2 == 0) return num1;
 
   while(sobra!=0){
     sobra = num1 % num2;
