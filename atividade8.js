@@ -1,6 +1,8 @@
 function main(args) {
     // codigo
-    if( args === args.split("").reverse().join(""))return true;
+    args = args.toLowerCase();
+
+    if( args.replace(/\s/g, '') === args.replace(/\s/g, '').split("").reverse().join(""))return true;
     return  false;
 }
 module.exports = main;

@@ -1,4 +1,6 @@
-const main = require("./atividade40");
+const main = require("./atividade16");
 
-const listaNumeros = [12, 18, 24, 36, 48, 60];
-console.log("Os MDCs da lista de numeros são:", main(listaNumeros));
+
+console.log(main([-1, -2, -3], [4, 5, 6]));
+console.log(main([2, 4, 6], [1, 1, 1]));
+console.log(main([1, 2, 3], [1, 2, 3]));
