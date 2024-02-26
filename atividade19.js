@@ -1,5 +1,9 @@
 function main(args) {
   // codigo
+
+  if(!args.lentgh){
+    return 0;
+  }
   let soma=0;
 
  
@@ -7,6 +11,7 @@ function main(args) {
     soma+=element;
   });
 
+  
   return soma/args.length;
 }
 module.exports = main;

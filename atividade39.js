@@ -1,11 +1,12 @@
 function main(args) {
   // codigo
-  let resul = 0;
   let numeroString = args.toString();
 
+  let divisor = 0;
   for(let index = 0; index < numeroString.length; index++){
-    resul += parseInt(numeroString[index])**numeroString.length;
+    divisor += parseInt(numeroString[index]);
   }
-  return resul == args;
+
+  return args/divisor == parseInt(args/divisor, 10);
 }
 module.exports = main;

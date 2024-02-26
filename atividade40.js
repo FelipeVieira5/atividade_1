@@ -23,6 +23,6 @@ function main(args) {
   }
 
   mdcArray.push(mdc(args[args.length - 2], args[args.length - 1]));
-  return mdcArray;
+  return mdcArray[0];
 }
 module.exports = main;

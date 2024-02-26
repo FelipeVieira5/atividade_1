@@ -1,5 +1,5 @@
 function main(args) {
   // codigo
-  return Math.cos(args*(Math.PI/180));
+  return Math.cos(args).toFixed(5);
 }
 module.exports = main;

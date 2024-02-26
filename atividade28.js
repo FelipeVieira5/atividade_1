@@ -1,16 +1,13 @@
 function main(args) {
-    let bufferValores = {};
+  let bufferValores = [];
 
-    for (let index in args) {
-      bufferValores[args[index]] = (bufferValores[args[index]] || 0) + 1;
+  for (let index in args) {
+    if (!bufferValores.includes(args[index])) {
+      bufferValores.push(args[index]);
     }
+  }
 
-    let qtdaPalavrasUnicas = 0;
-    args.forEach(element => {
-      if(bufferValores.hasOwnProperty(element) && bufferValores[element] === 1)qtdaPalavrasUnicas++;
-    });
-
-    return qtdaPalavrasUnicas;
+  return bufferValores.length;
 }
 
 module.exports = main;

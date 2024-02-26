@@ -1,12 +1,14 @@
 function main(listaPalavras,acrostico) {
   // codigo
+  if(!listaPalavras.length || acrostico == undefined)return false;
+
   acrostico = acrostico.toLowerCase();
 
+  let palavra = "";
   for(let index in listaPalavras){
-    let palavra = listaPalavras[index].toLowerCase();
-    if(palavra.charAt(0) !== acrostico[index])return false;
+    palavra += listaPalavras[index].charAt(0).toLowerCase();
   }
 
-  return true;
+  return acrostico == palavra;
 }
 module.exports = main;
