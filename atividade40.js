@@ -23,6 +23,9 @@ function main(args) {
   }
 
   mdcArray.push(mdc(args[args.length - 2], args[args.length - 1]));
-  return mdcArray[0];
+
+  if(!mdcArray.length) return 0.
+
+  return Math.max(...mdcArray);
 }
 module.exports = main;
