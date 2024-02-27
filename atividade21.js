@@ -1,14 +1,14 @@
-function main(listaPalavras,acrostico) {
+function main(listaPalavras,acronimo) {
   // codigo
-  if(!listaPalavras.length || acrostico == undefined)return false;
+  if(!listaPalavras.length || acronimo == undefined)return false;
 
-  acrostico = acrostico.toLowerCase();
+  acronimo = acronimo.toLowerCase();
 
   let palavra = "";
   for(let index in listaPalavras){
     palavra += listaPalavras[index].charAt(0).toLowerCase();
   }
 
-  return acrostico == palavra;
+  return acronimo == palavra;
 }
 module.exports = main;

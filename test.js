@@ -1,8 +1,7 @@
-const main = require("./atividade40");
+const main = require("./atividade21");
 
 
-console.log(main([8, 12, 16]));
-console.log(main([15, 25, 35]));
-console.log(main([18, 27, 36]));
+console.log(main(["Test","Nome"],"TN"));
+
 
 
